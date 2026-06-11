@@ -4,6 +4,7 @@ pyrogram.types.Message.message_id = property(lambda self: self.id)
 import os
 import logging
 from pyrogram import Client
+from pyrogram.enums import ParseMode
 from bot import (
   APP_ID,
   API_HASH,
@@ -31,7 +32,7 @@ if __name__ == "__main__":
         api_id=APP_ID,
         api_hash=API_HASH,
         plugins=plugins,
-        parse_mode=ParseMode.HTML,
+        parse_mode=ParseMode.MARKDOWN,
         workdir=DOWNLOAD_DIRECTORY
     )
     LOGGER.info('Starting Bot !')
