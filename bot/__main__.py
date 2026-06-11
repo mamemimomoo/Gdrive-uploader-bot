@@ -1,3 +1,6 @@
+import pyrogram
+pyrogram.types.Message.message_id = property(lambda self: self.id)
+
 import os
 import logging
 from pyrogram import Client
