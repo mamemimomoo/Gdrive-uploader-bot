@@ -1,3 +1,5 @@
+from pyrogram.enums import ParseMode
+
 import re
 import json
 from httplib2 import Http
